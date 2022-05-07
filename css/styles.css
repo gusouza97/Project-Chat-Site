@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/* Remover depois */
+img {
+    width: 100px;
+}
+
+/* Configurao Classes Dinamicas */
+
+.Wrapper {
+    background-color: white;
+    display: flex;
+    height: 800px;
+    width: 70%;
+}
+
+.FlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.FlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.FlexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONFIGUTAÇÃO CONTAINER DOS CONTATOS */
+
+/* Componente Title */
+.ContainerContact {
+    background-color: #0e7aef;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 25%;
+}
+
+.ContactTitle {
+    padding-bottom: 20px;
+}
+
+.ContactTitleText h1,
+.ContactNew {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* Componente Search */
+
+
+
+/* Configurao Container de Messages */
+
+.ContainerChat {
+    width: 50%;
+    background-color: #f1f3f4;
+}
+
+/* Configurao Container dos Users Info */v
+
+.ContainerUserInfo {
+    width: 25%;
+}
