@@ -7,8 +7,7 @@
 }
 
 body {
-    background-image: url('../img/background.jpg');
-    background-size: cover;
+    background-color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,7 @@ img {
 /* Configurao Classes Dinamicas */
 
 .Wrapper {
-    background-color: white;
+    background-color: #222;
     display: flex;
     height: 800px;
     width: 70%;
@@ -50,8 +49,9 @@ img {
 /* Componente Title */
 .ContainerContact {
     background-color: #0e7aef;
+    border-radius: 10px;
     color: white;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
     width: 25%;
@@ -68,7 +68,49 @@ img {
 }
 
 /* Componente Search */
+.ContactSearch {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+}
 
+.ContactSearchInput {
+    height: 45px;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: RGBA(204,204,204,0.5);
+}
+
+.ContactSearchInput::-webkit-input-placeholder { 
+    color: white;
+}
+  
+.ContactSearchInput:-ms-input-placeholder { 
+    color: white;
+}
+  
+.ContactSearchInput::placeholder {
+    color: white;
+}
+
+.ContactSearchInput:focus {
+    color: white;
+    outline: none;
+}
+
+/* Componente Menu Contacts */
+.ContactMenu {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 
 
 /* Configurao Container de Messages */
@@ -81,5 +123,16 @@ img {
 /* Configurao Container dos Users Info */v
 
 .ContainerUserInfo {
+    background-color: white;
     width: 25%;
+}
+
+.ContactPhoto {
+    margin-right: 10px;
+}
+
+.ContactPhoto img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
