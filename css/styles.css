@@ -116,6 +116,7 @@ img {
 .ContactChat {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #59a6f9;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -130,6 +131,7 @@ img {
 }
 
 .ContactPhoto {
+    width: 25%;
     margin-right: 10px;
 }
 
@@ -140,8 +142,17 @@ img {
 }
 
 .ContactMessage {
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 65%;
+    padding-right: 10px;
+}
+
+.ContactMessage p {
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .ContactName {
@@ -151,7 +162,7 @@ img {
 
 .ContactCountMessage {
     display: flex;
-    width: 100%;
+    width: 10%;
     height: 100%;
     justify-content: flex-end;
     align-items: center;
