@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #222;
+    background-color: #0C4A6E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,10 +23,11 @@ img {
 /* Configurao Classes Dinamicas */
 
 .Wrapper {
-    background-color: #222;
+    background-color: #f1f3f4;
+    border-radius: 10px;
     display: flex;
     height: 800px;
-    width: 70%;
+    width: 1400px;
 }
 
 .FlexColumn {
@@ -49,16 +50,17 @@ img {
 /* Componente Title */
 .ContainerContact {
     background-color: #0e7aef;
-    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: white;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
     width: 25%;
 }
 
 .ContactTitle {
     padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .ContactTitleText h1,
@@ -67,12 +69,18 @@ img {
     text-transform: uppercase;
 }
 
+.ContactNew i {
+    cursor: pointer;
+}
+
 /* Componente Search */
 .ContactSearch {
     display: flex;
     justify-content: center;
     height: 60px;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .ContactSearchInput {
@@ -103,28 +111,22 @@ img {
     outline: none;
 }
 
-/* Componente Menu Contacts */
-.ContactMenu {
+/* Componente de Messages Users List */
+
+.ContactChat {
     display: flex;
-    font-size: 24px;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    align-items: center;
+    background-color: #59a6f9;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
 }
 
-
-/* Configurao Container de Messages */
-
-.ContainerChat {
-    width: 50%;
-    background-color: #f1f3f4;
-}
-
-/* Configurao Container dos Users Info */v
-
-.ContainerUserInfo {
-    background-color: white;
-    width: 25%;
+.ContactPhoto {
+    justify-content: center;
+    align-items: center;
 }
 
 .ContactPhoto {
@@ -135,4 +137,279 @@ img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+.ContactMessage {
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactName {
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.ContactCountMessage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ContactCountMessage p {
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #0e7aef;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+/* Componente Menu Contacts */
+.ContactMenu {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.ContactMenu i {
+    cursor: pointer;
+}
+
+/* Configurao Container de Messages */
+
+.ContainerChat {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #f1f3f4;
+}
+
+/* Config Title Chat Message Container */
+
+.ChatTitle {
+    height: 100px;
+    box-shadow: 0px 1px 9px -4px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 1px 9px -4px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 1px 9px -4px rgba(0,0,0,0.65);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.ChatName h2 {
+    font-size: 28px;
+    color: #44403C;
+}
+
+.ChatCall i {
+    color: white;
+    background-color: #0e7aef;
+    border-radius: 50px;
+    padding: 13px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Config Content Chat Message Container */
+
+.ChatMessage {
+    overflow: hidden;
+    overflow-y: scroll;
+    display: block;
+    height: 100%;
+    position: relative;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .ChatMessage {
+    scrollbar-width: auto;
+    scrollbar-color: #0e7aef #f1f3f4;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .ChatMessage::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .ChatMessage::-webkit-scrollbar-track {
+    background: #f1f3f4;
+  }
+
+  .ChatMessage::-webkit-scrollbar-thumb {
+    background-color: #0e7aef;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+  }
+
+.ContentProfile {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ContentProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.ContentProfile p {
+    font-size: 14px;
+}
+
+.ContentTextMessage {
+    overflow-wrap: break-word;
+    color: #44403C;
+    background-color: #dce1e4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 60px;
+    margin-left: 13px;
+    padding: 15px;
+    width: 55%;
+}
+
+/* Config Content Input Chat Message Container */
+
+.ChatMainOptions {
+    height: 80px;
+    width: 100%;
+    background-color: #dce1e4;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ChatMessageInput {
+    display: flex;
+    width: 75%;
+}
+
+.ChatMessageInput form {
+    width: 100%;
+}
+
+.ChatMessageInput input {
+    display: flex;
+    word-break: break-word;
+    font-size: 16px;
+    background-color: #dce1e4;
+    margin-left: 20px;
+    border: none;
+    height:40px;
+    width: 100%;
+}
+
+.ChatMessageInput input:focus {
+    outline: none;
+}
+
+.ChatOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    font-size: 22px;
+    color: #7e8285;
+}
+
+.ChatOptions i {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.fa-location-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e7aef;
+    border-radius: 50px;
+    color: white;
+    padding: 22px;
+}
+
+/* Configurao Container dos Users Info */
+
+.ContainerUserInfo {
+    display: flex;
+    background-color: #FFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px 30px;
+    width: 25%;
+    box-shadow: -1px 3px 9px -4px rgba(0,0,0,0.65);
+    -webkit-box-shadow: -1px 3px 9px -4px rgba(0,0,0,0.65);
+    -moz-box-shadow: -1px 3px 9px -4px rgba(0,0,0,0.65);
+}
+
+.UserInfoClose {
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.UserInfoClose i {
+    cursor: pointer;
+}
+
+.UserInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserInfoPhotoProfile {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserInfo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.UserInfoStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.UserInfoStatus h1 {
+    color: #44403C;
+}
+
+.UserInfoStatus p,
+.UserInfoContact {
+    color: #7e8285;
+}
+
+.UserInfoContact i {
+    margin-bottom: 12px;
+}
+
+/* Componente Media */
+
+.UserInfoShareTitle {
+    margin-top: 10px;
+    color: #44403C;
 }
